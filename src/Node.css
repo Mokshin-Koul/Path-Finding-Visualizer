@@ -1,0 +1,133 @@
+.Cell {
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgb(0,190,218);
+    border-bottom: 1px solid transparent
+}
+
+.Cell:not(:last-child) {
+    border-right: 1px solid transparent;
+}
+
+.Start {
+    background-color: violet
+}
+
+.End {
+    background-color: crimson;
+}
+
+.visited {
+    animation: dijkstra 1.4s ease-out;
+    animation-delay: 0.04s;
+    
+}
+
+/* rgba(0,190,218,0.75) */
+
+.node {
+    background-color: yellow;
+    border: 1px solid rgb(191,193,194);
+}
+
+.color {
+    background-color: rgba(0,190,218,0.75);
+    border: 1px solid rgb(174,217,248);
+}
+
+.Wall-color {
+    background-color: rgb(12,52,70);
+}
+
+.Wall-click {
+    animation: wall 0.3s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.Weight-color {
+    background-color: #FB3640;
+}
+
+.Weight-click {
+    animation: wall 0.3s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.shortest-path {
+    background-color: #FED049;
+    border: 1px solid transparent;
+}
+
+.shortest-path-animation {
+    animation: shortestpath 1s ease;
+}
+
+@keyframes dijkstra {
+    0% {
+        transform: scale(0.2);
+        background-color: rgba(0,0,66,0.75);
+        border-radius: 100%
+    }
+    60% {
+        background-color: rgba(17,104,217,0.75);
+    }
+    85% {
+        transform: scale(1.2);
+        background-color: rgba(0,217,159,0.75);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgba(0,190,218,0.75);
+    }
+}
+
+@keyframes wall {
+    0% {
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.1);
+        
+    }
+    100% {
+        transform: scale(1);
+        
+    }
+}
+
+@keyframes weight {
+    0% {
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.1);
+        
+    }
+    100% {
+        transform: scale(1);
+        
+    }
+}
+
+@keyframes shortestpath {
+    0% {
+        transform: scale(0.5);
+        background-color: #FED049;
+    }
+    50% {
+        transform: scale(1.3);
+        background-color: #FED049;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #FED049;
+    }
+}
+
+.arrow {
+    height: 100%;
+    width: 100%;
+}
+

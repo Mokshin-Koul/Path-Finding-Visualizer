@@ -1,0 +1,12 @@
+.Row {
+    display: flex;
+}
+
+.Row:last-child {
+    border-bottom: 1px solid rgb(0,190,218);
+}
+
+.Grid {
+    width: 99%;
+    margin: 2px auto 0 auto;
+}
