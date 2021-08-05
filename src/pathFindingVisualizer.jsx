@@ -169,7 +169,7 @@ class pathVisualizer extends Component {
             document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.add("color");
           }, 1200);
         }
-      }, 20 * i);
+      }, 26 * i);
     }
   };
 
