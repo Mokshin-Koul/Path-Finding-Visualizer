@@ -162,14 +162,15 @@ class pathVisualizer extends Component {
         if (!visitedNodesInOrder[i].isEnd && !visitedNodesInOrder[i].isStart) {
           document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.add("visited");
           document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.add("node");
-          setTimeout(() => {
-            document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.remove("node");
-          }, 25);
+          // document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.add("color");
+          // setTimeout(() => {
+            //document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.remove("node");
+          // }, 25);
           setTimeout(() => {
             document.querySelector(`.Cell-${visitedNodesInOrder[i].row}-${visitedNodesInOrder[i].col}`).classList.add("color");
           }, 1200);
         }
-      }, 26 * i);
+      }, 30 * i);
     }
   };
 
